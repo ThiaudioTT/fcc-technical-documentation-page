@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FCC: technical documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>C++ documentation</header>
+
+        <ul>
+            <li><a href="#About_C++" class="nav-link">About C++</a></li>
+            <li><a href="#C_and_C++" class="nav-link">C and C++</a></li>
+            <li><a href="#Requisites" class="nav-link">Requisites</a></li>
+            <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+            <li><a href="#Variables" class="nav-link">Variables</a></li>
+            <li><a href="#Primitive_Data_Types" class="nav-link">Primitive Data Types</a></li>
+            <li><a href="#Conditional_Statements" class="nav-link">Conditional Statements</a></li>
+            <li><a href="#Loops" class="nav-link">Loops</a></li>
+            <li><a href="#Reference" class="nav-link">Reference & Github</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section id="About_C++" class="main-section">
+            <header>About C++</header>
+            <article>
+                <p>C++ is a general-purpose programming language created by Danish computer scientist
+                    Bjarne Stroustrup as an extension of the C programming language, or "C with Classes". The language
+                    has
+                    expanded significantly over time, and modern C++ now has object-oriented, generic, and functional
+                    features in addition to facilities for low-level memory manipulation. It is almost always
+                    implemented as
+                    a compiled language, and many vendors provide C++ compilers, including the Free Software Foundation,
+                    LLVM, Microsoft, Intel, Oracle, and IBM, so it is available on many platforms.</p>
+                <p>
+                    C++ was designed with an orientation toward systems programming and embedded, resource-constrained
+                    software and large systems, with performance, efficiency, and flexibility of use as its design
+                    highlights. C++ has also been found useful in many other contexts, with key strengths being software
+                    infrastructure and resource-constrained applications, including desktop applications, video games,
+                    servers (e.g. e-commerce, web search, or databases), and performance-critical applications (e.g.
+                    telephone switches or space probes)
+                </p>
+                <p>
+                    C++ is standardized by the International Organization for Standardization (ISO), with the latest
+                    standard version ratified and published by ISO in December 2020 as ISO/IEC 14882:2020 (informally
+                    known
+                    as C++20). The C++ programming language was initially standardized in 1998 as ISO/IEC 14882:1998,
+                    which was then amended by the C++03, C++11, C++14, and C++17 standards. The current C++20 standard
+                    supersedes these with new features and an enlarged standard library. Before the initial
+                    standardization
+                    in 1998, C++ was developed by Stroustrup at Bell Labs since 1979 as an extension of the C language;
+                    he
+                    wanted an efficient and flexible language similar to C that also provided high-level features for
+                    program organization. Since 2012, C++ has been on a three-year release schedule with C++23 as
+                    the next planned standard.
+                </p>
+            </article>
+        </section>
+
+        <section id="C_and_C++" class="main-section">
+            <header>C and C++</header>
+            <article>
+                <p>The most important difference between the two languages is the different approach to programming that
+                    each uses. <b>C is a procedural oriented language</b> and its emphasis is on functions.
+                    Programs are divided into a set of functions and they consist of step-by-step instructions, or
+                    commands,
+                    to be executed in sequential order. This style of programming specifies how to do something, giving
+                    structured steps for how computational
+                    tasks will be carried out, following a top-down approach. This style of programming can get quite
+                    messy
+                    and error-prone when programs grow in size. It leads to a
+                    lot of copying and pasting througout the file and updating many functions when there is a change.
+                </p>
+                <p>
+                    Besides being a procedural language, <b>C++ is also an Object Oriented Programming language</b>,
+                    which
+                    is based
+                    on the concept of diving a program into objects. Everything is organized and divided into smaller
+                    groups
+                    of related parts or objects, which are an
+                    instance of a class, following a bottom-up approach. Object Oriented Programming is based on four
+                    principles: encapsulation, abstraction, inheritance and
+                    polymorhism. This style of programming creates more readable and usable code that is easier to
+                    maintain,
+                    while also
+                    providing better data security.</p>
+            </article>
+        </section>
+        
+        <section id="Requisites" class="main-section">
+            <header>Requisites</header>
+            <p>For start a good C++ program, you will need at least these requirements:</p>
+            <ul>
+                <li>A compiler</li>
+                <li>An IDE or a text editor</li>
+                <li>Interest in learning</li>
+            </ul>
+            <p>Did you get it? Let's go!</p>
+        </section>
+
+
+        <section id="Hello_World" class="main-section">
+            <header>Hello World</header>
+            <p>Hello World is a good method to see the syntax of a language</p>
+            <code>#include &ltiostream&gt
+                 int main() {
+                        std::cout << "Hello World!";
+                        return 0;
+                    }
+            </code>
+        </section>
+
+        <section id="Variables" class="main-section">
+            <header>Variables</header>
+            <p>You start declaring variables by first defining its type, name and value (the value should correspond to
+                its type):</p>
+            <code>type name = value;</code>
+            <p>Real example:</p>
+            <code>string word = "avocado";</code>
+        </section>
+
+        <section id="Primitive_Data_Types" class="main-section">
+            <header>Primitive Data Types</header>
+            <p>All variables use data-type during declaration to restrict the type of data to be stored. Therefore, we
+                can say that data types are used to tell the variables the type of data it can store. Whenever a
+                variable is defined in C++, the compiler allocates some memory for that variable based on the data type
+                with which it is declared. Every data type requires a different amount of memory.</p>
+            <p>The main data-types to create variables (primitives) is listed below</p>
+            <ul>
+                <li>Integer</li>
+                <li>Character</li>
+                <li>Boolean</li>
+                <li>Floating Point</li>
+                <li>Double Floating Point</li>
+                <li>Valueless or Void</li>
+                <li>Wide Character</li>
+            </ul>
+        </section>
+
+        <section id="Conditional_Statements" class="main-section">
+            <header>Conditional Statements</header>
+            <p>In order to make our program do strongs input and outputs we need to learn the if statement.</p>
+            <code>if (condition) {
+                // block of code if condition is true
+              }
+              else {
+                // block of code if condition is false
+              }</code>
+        </section>
+
+        <section id="Loops" class="main-section">
+            <header>Loops</header>
+            <p>Sometimes we need to write a function, let's say, 100 times. With loops, you won't need to write 100
+                times, but actually 1 time!</p>
+            <p>An example of a loop statement: </p>
+            <code>while(condition is true) {
+                 // execute this code ... 
+                }</code>
+        </section>
+
+        <section id="Reference" class="main-section">
+            <header>Reference</header>
+            <ul>
+                <li>https://en.wikipedia.org/wiki/C%2B%2B</li>
+                <li>https://www.freecodecamp.org/news/c-vs-cpp-whats-the-difference/</li>
+                <li>https://www.programiz.com/cpp-programming/if-else</li>
+            </ul>
+            <p>Website made by: <a href="https://github.com/ThiaudioTT" target="_blank">Thiago</a></p>
+        </section>
+    </main>
+
+</body>
+
+
+</html>

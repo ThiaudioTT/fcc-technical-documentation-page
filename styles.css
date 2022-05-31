@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;500&family=Nunito+Sans:ital,wght@1,200&family=Radio+Canada:wght@500&family=Roboto:ital,wght@0,400;1,300&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Tiro+Kannada&display=swap');
+
+body {
+
+    font-family: 'Tiro Kannada', serif;
+    background-color: #ffffff;
+}
+
+
+/* navbar */
+#navbar header {
+    display: block;
+    font-size: 2em;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+#navbar {
+    font-family: 'Hind Siliguri', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    min-width: 290px;
+    width: 300px;
+
+    border-right: solid;
+    color: gray;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+#navbar ul {
+    height: 100%;
+    padding: 0;
+}
+
+#navbar li {
+    border-top: 1px solid;
+    list-style: none;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    padding: 1rem 2rem;
+    color: rgb(58, 58, 58);
+    text-decoration: none;
+}
+
+/*DOC*/
+#main-doc {
+    margin-left: 320px;
+    line-height: 1.5rem;
+}
+
+#main-doc header {
+    display: block;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 0.67em;
+    margin-left: -14px;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+code {
+
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #424242;
+    color: #666;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+
+    word-break: normal;
+    word-wrap: normal;
+    white-space: pre-line;
+
+}
+
+@media (max-width: 780px) {
+    #navbar {
+        position: static;
+        top: 0;
+        margin-right: auto;
+        margin-left: auto;
+
+        text-align: center;
+        width: 100%;
+
+        border: 1px solid;
+        color: gray;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+        
+        
+    }
+
+    #navbar ul {
+        height: 207px;
+    }
+
+    #main-doc {
+        margin-left: 15px;
+    }
+
+}
